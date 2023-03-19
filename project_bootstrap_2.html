@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initialscale=1">
+    <link rel="icon" href="favicon.ico">
+    <title>Movie Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/movie/movie-bg.jpg) no-repeat
+                        top center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        /* elemen berwarna hitam transparan */
+        .container-fluid {
+            background-color: rgba(0, 0, 0, 0.6);
+        }   
+    </style>
+    </head>
+    <body class="bg-secondary text-white">
+        <!-- main content - start -->
+        <!-- navigasi -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img&mov/movie.png" height="30px">
+            </a>
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV Episodes</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text"
+                            placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0"
+                            type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </nav>
+        <!-- container -->
+        <div class="container-fluid mt-5 pt-1">
+            <div class="container">
+                <!-- elemen video player -->
+                <div class="card bg-dark text-white mt-4">
+                    <div class="card-body bg-dark">
+                        <video width="100%" controls>
+                        <source src="img&mov/Stranger Things _ Official Final Trailer _ Netflix.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <!-- deskripsi film (poster, judul, rating, keterangan) -->
+                <div class="card bg-dark text-white mt-4">
+                    <div class="card-body bg-dark">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <img src="img&mov/st4.jpg"
+                                    class="img-fluid">
+                            </div>
+                             <div class="col-sm-10">
+                                <h4>Stranger Things (2016)</h4>
+                                <p class="mt-0 pt-0 mb-0 pb-0 font-weight-bold">
+                                    Rated: 9.7 of 10 with 2,627 votes.
+                                </p>
+                                <p class="text-justify">
+                                    When a young boy vanishes, a small town uncovers a mystery involving secret experiments, 
+                                    terrifying supernatural forces and one strange little girl.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 12 rekomendasi film (1 row, 6 column)-->
+                <div class="row mt-2 pb-4">
+                    <div class="col-sm-2">
+                        <!-- informasi detail -->
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/wednesday.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                Wednesday (2022)
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/tsitp.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                The Summer I Turned Pretty (2022)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/ginny&georgia.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                Ginny & Georgia (2021)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/oneofusislying.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                One of Us Is Lying (2021)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/cruella.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                Cruella (2021)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/enola.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                Enola Holmes (2020)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/umbrellaacademy.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                The Umbrella Academy (2019)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/you.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                You (2018)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/baby.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                Baby (2018)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/moneyheist.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                Money Heist (2017)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/elite.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                Elite (2018)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card bg-dark text-white mt-4">
+                            <div class="card-body bg-dark">
+                                <img src="img&mov/13reasonswhy.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-light text-dark text-center
+                                        font-weight-bold">
+                                13 Reasons Why (2018)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main content - end -->
+        <!--
+        Bootstrap core JavaScript
+        Placed at the end of the document so the pages load faster
+        -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+    </body>
+</html>   
